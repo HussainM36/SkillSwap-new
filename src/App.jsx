@@ -25,7 +25,7 @@ import MatchNotification from './pages/MatchNotification';
 import MatchNotification1 from './pages/MatchNotification1';
 import Friends from './pages/Friends';
 import FriendsChat from "./pages/FriendsChat";
-import Quiz from "./pages/quiz";
+import Quiz from "./pages/Quiz";
 import Messages from "./pages/Messages";
 // ========================
 // Components
