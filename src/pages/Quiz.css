@@ -1,0 +1,202 @@
+/* ===============================
+   QUIZ PAGE STYLING (THEMED)
+================================*/
+
+/* Main container */
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: transparent;
+  padding-top: 80px;
+  box-sizing: border-box;
+}
+
+/* Quiz card */
+.question-card {
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  padding: 40px 50px;
+  width: 420px;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Header and progress */
+.quiz-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quiz-counter {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+/* Question */
+.question-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.question-subtitle {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Options grid */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  width: 100%;
+}
+
+.option-button {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 15px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.option-button:hover {
+  border-color: var(--primary);
+  box-shadow: 0 0 8px rgba(255, 122, 89, 0.3);
+  transform: translateY(-1px);
+}
+
+.option-button.selected {
+  border: 2px solid var(--primary);
+  background: rgba(255, 122, 89, 0.1);
+}
+
+/* Progress bar */
+.progress-container {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: var(--primary);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+/* Navigation buttons */
+.quiz-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: transform 0.08s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(255, 122, 89, 0.35);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(255, 122, 89, 0.5);
+}
+
+.btn-outline {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--primary);
+}
+
+/* Completion screen */
+.quiz-complete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.complete-content {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 40px;
+  width: 420px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.complete-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.complete-description {
+  color: var(--muted);
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.complete-actions button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .question-card,
+  .complete-content {
+    width: 90%;
+    padding: 25px;
+  }
+}

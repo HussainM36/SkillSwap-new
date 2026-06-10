@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatRoom | SkillSwap</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Socket.io + Client -->
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="client.js"></script>
+</head>
+<body>
+  <h1>Welcome to ChatRoom</h1>
+
+  <nav>
+    <img class="logo" src="chat-app-icon-0.jpg" alt="Chat App Logo" />
+  </nav>
+
+  <div class="container">
+    <!-- Example messages -->
+    <!-- <div class="message right">Hussain: How are you?</div> -->
+    <!-- <div class="message left">Rohan: I am fine!</div> -->
+  </div>
+
+  <div class="send">
+    <form action="#" id="send-container">
+      <input type="text" name="messageinput" id="messageinput" placeholder="Type your message..." />
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- ======================================================= -->
+  <!-- ✅ Chatbase Chatbot Integration -->
+  <!-- ======================================================= -->
+  <script>
+    // Initialize Chatbase config
+    window.chatbaseConfig = {
+      chatbotId: "GlZgwTiNwaqqCv0o9ls70", // 🔹 Replace with your actual Chatbase chatbot ID
+    };
+
+    // Load Chatbase script safely
+    (function() {
+      const script = document.createElement("script");
+      script.src = "https://www.chatbase.co/embed.min.js";
+      script.id = "GlZgwTiNwaqqCv0o9ls70"; // same ID as above
+      script.defer = true;
+      document.body.appendChild(script);
+    })();
+  </script>
+
+  <!-- Optional: Customize bubble color, icon, etc. -->
+  <style>
+    /* Example customization if Chatbase supports styling overrides */
+    .chatbase-bubble {
+      background-color: #ff9800 !important; /* orange bubble */
+    }
+  </style>
+
+</body>
+</html>

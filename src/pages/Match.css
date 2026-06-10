@@ -1,0 +1,89 @@
+.match-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 120px;
+  min-height: 100vh;
+  background: transparent;
+  text-align: center;
+}
+
+.profile-card {
+  background: var(--card);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  padding: 24px;
+  width: 320px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.profile-card img.profile-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.match-button, .skip-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.match-button {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0 8px 20px rgba(124,92,255,0.35);
+}
+
+.skip-button {
+  background-color: transparent;
+  color: var(--danger);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* Swipe animations */
+.swipe-left {
+  transform: translateX(-400px) rotate(-20deg);
+  opacity: 0;
+}
+
+.swipe-right {
+  transform: translateX(400px) rotate(20deg);
+  opacity: 0;
+}
+
+/* Bottom Navbar */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(15,22,45,0.7);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(8px);
+}
+
+.nav-item {
+  font-size: 24px;
+  color: var(--muted);
+}
+
+.nav-item.active {
+  color: var(--accent);
+}

@@ -1,0 +1,108 @@
+/* Container for whole signup page */
+.signup-container {
+  display: flex;
+  flex-direction: column; /* important to stack nav + signup box */
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  min-height: 100vh;
+  overflow: hidden; /* removes the scrollbar */
+  padding-top: 80px; /* adjust if navbar height is different */
+  box-sizing: border-box;
+}
+
+/* Signup Box (card) */
+.signup-box {
+  background: var(--card);
+  padding: 40px 50px;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -250px;
+}
+
+/* Logo Text */
+.logo {
+  font-family: var(--font-sans);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+
+/* Signup Form */
+.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Inputs */
+.signup-form input {
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: var(--text);
+}
+
+/* Focus on Inputs */
+.signup-form input:focus {
+  outline: none;
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 0 3px rgba(255,122,89,0.25);
+}
+
+/* Submit Button */
+.signup-form button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px;
+  transition: transform 0.08s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(255,122,89,0.35);
+}
+
+/* Button Hover Effect */
+.signup-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(255,122,89,0.5);
+}
+
+/* Divider (optional if you have one) */
+.divider {
+  margin: 20px 0;
+  color: #999;
+  font-size: 13px;
+}
+
+/* Footer Text */
+.login-link {
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+/* Login Span (Link) */
+.login-span {
+  color: var(--accent);
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* Login Span Hover */
+.login-span:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,149 @@
+/* AuthPage.css */
+
+.login-container {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 40px;
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  font-family: var(--font-sans);
+  text-align: center;
+  color: var(--text);
+}
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.login-container h2 {
+  text-align: center;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input {
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  background: var(--card);
+  color: var(--text);
+}
+
+.login-container button {
+  padding: 12px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(255,122,89,0.35);
+}
+
+.login-container .error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-container .success {
+  color: green;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-container .login-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.login-container .forgot-link {
+  color: var(--accent);
+}
+
+.login-container .forgot-link:hover {
+  text-decoration: underline;
+}
+
+
+.login-container h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #333;
+}
+
+.login-container p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input {
+  padding: 12px 16px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border 0.3s;
+  color: var(--text);
+  background-color: var(--card);
+}
+
+.login-container input:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255,122,89,0.25);
+}
+
+.login-btn {
+  padding: 12px;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: transform 0.08s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(255,122,89,0.35);
+}
+
+.login-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px rgba(255,122,89,0.5);
+}
+
+.login-footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
