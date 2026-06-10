@@ -2,7 +2,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
-import "./Navbar.css";
+import "./navbar.css";
 
 function Navbar() {
   const { user, setUser } = useContext(AuthContext);
