@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import "./friends.css";
+import "./Friends.css";
 
 function Friends() {
   const [friends, setFriends] = useState([]);
